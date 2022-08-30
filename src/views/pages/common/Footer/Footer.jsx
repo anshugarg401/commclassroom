@@ -6,9 +6,10 @@ import Twitter from '../../../../assets/images/Twitter.svg';
 import YouTube from '../../../../assets/images/YouTube.svg';
 import UpArrow from '../../../../assets/images/UpArrow.svg';
 import balloon from '../../../../assets/images/ballon.png';
+import ScrollToTop from '../../../../components/ScrollToTop/ScrollToTop';
 import '../../../../assets/css/styles.css';
 
-const Footer = () => {
+const Footer = () => {  
   return (
     <>
       <div className="z-10 absolute left-20 transform -rotate-45">
@@ -66,8 +67,8 @@ const Footer = () => {
         </div>
 
         <div className="text-4xl self-center pr-14">
-          <button>
-            <img src={UpArrow} alt="logo" />
+          <button >
+            <img src={UpArrow} alt="logo" onClick={ScrollToTop} />
           </button>
         </div>
       </div>
